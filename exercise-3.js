@@ -1,12 +1,12 @@
-// Membuat variabel untuk menyimpan tinggi segitiga
+// Create a variable for the height of triangle
 const triangle = 7;
 
-for (let i = 1; i <= triangle; i++) {
-  let printTriangle = ""; // Loop ini digunakan untuk mengatur baris-baris segitiga hingga mencapai tinggi segitiga yang telah ditentukan (7).
-  for (let j = 1; j <= i; j++) {
-    printTriangle += j; //  Loop ini digunakan untuk mengisi setiap baris segitiga dengan angka, dimulai dari 1 hingga 7
+for (let row = 1; row <= triangle; row++) {
+  let printTriangle = ""; // This loop is used to arrange the rows of triangles until they reach the specified triangle height (7).
+  for (let column = 1; column <= row; column++) {
+    printTriangle += column; //  This loop is used to fill each row of triangles with numbers, starting from 1 to 7
   }
 
-  // Menampilkan segitiga
+  // Displays triangle
   console.log(printTriangle);
 }

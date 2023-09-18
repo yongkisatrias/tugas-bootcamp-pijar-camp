@@ -13,7 +13,7 @@ let data = {
   website: "hildegard.org",
 };
 
-// Menggunakan spread operator untuk mengganti nilai
+// Using the spread operator to replace values
 const newData = {
   ...data,
   name: "Yongki Satria Sanjaya",
@@ -23,7 +23,7 @@ const newData = {
 
 console.log(newData);
 
-// Menggunakan destructuring untuk mengambil data "street" dan "city"
+// Using destructuring to retrieve "street" and "city" from data
 const {
   address: { street, city },
 } = data;

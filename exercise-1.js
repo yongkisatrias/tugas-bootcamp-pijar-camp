@@ -1,4 +1,4 @@
-// Membuat variabel biodata
+// Create biodata variables
 const biodata = {
   name: "Yongki Satria Sanjaya",
   age: 21,
@@ -6,10 +6,22 @@ const biodata = {
   isMarried: false,
   schoolList: [
     {
+      name: "SDN 5 Sepatan Tangerang",
+      yearIn: 2007,
+      yearOut: 2013,
+      major: null,
+    },
+    {
+      name: "SMPN 1 Sepatan Tangerang",
+      yearIn: 2013,
+      yearOut: 2016,
+      major: null,
+    },
+    {
       name: "SMA Muhammadiyah Kudus",
       yearIn: 2016,
       yearOut: 2019,
-      major: "IPA",
+      major: "Natural sciences and biology",
     },
     {
       name: "Universitas Proklamasi 45 Yogyakarta",
@@ -24,12 +36,16 @@ const biodata = {
       level: "beginner",
     },
     {
-      skillName: "HTML/CSS",
+      skillName: "HTML",
+      level: "advanced",
+    },
+    {
+      skillName: "CSS",
       level: "advanced",
     },
   ],
   interestInCoding: true,
 };
 
-// Menampilkan hasil
+// Displays results
 console.log(biodata);

@@ -1,5 +1,5 @@
-// Membuat Validasi
-function value({ math, indonesian, english, science }) {
+// Create Validation
+const value = ({ math, indonesian, english, science }) => {
   const checkIsMathValid = !(math >= 0);
   const checkIsIndonesianValid = !(indonesian >= 0);
   const checkIsEnglishValid = !(english >= 0);
@@ -9,10 +9,10 @@ function value({ math, indonesian, english, science }) {
     return console.log("Semua nilai harus di isi!");
   }
 
-  // Menghitung rata-rata
+  // Calculate the average
   const average = (math + indonesian + english + science) / 4;
 
-  // Menentukan grade berdasarkan rata-rata
+  // Determine the grade based on the average
   let grade;
   if (average >= 90 && average <= 100) {
     grade = "A";
@@ -26,11 +26,12 @@ function value({ math, indonesian, english, science }) {
     grade = "E";
   }
 
-  // Menampilkan hasil
+  // Displays results
   console.log(`Average = ${average}
 Grade = ${grade}`);
-}
+};
 
+// Input value
 value({
   math: 80,
   indonesian: 90,
